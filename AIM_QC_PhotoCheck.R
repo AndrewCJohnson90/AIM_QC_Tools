@@ -15,20 +15,22 @@
 ## 2. Count the number of soil pit photos and cross reference with the
 ##    list of unique plot IDs to identify missing photos
 ## 3. Print the number and a list of any missing soil pit photos
-## 4. Repeat this process for transect start 1,2, and 3 based on the codes provided in the first section of code
-
+## 4. Repeat this process for transect start 1,2, and 3 based on the codes provided in the
+##    section below titled "Select Naming Conventions"
 ####
+
+###
 ## Dependent Packages
 ###
 library(dplyr)
 library(stringr)
 library(tidyverse)
 
-### Select naming conventions
-### Wildcards are programmed around this code
+### Select Naming Conventions
+### Wildcards are programmed around each code
 ### Thus, "T1S" will also pick up additional photos such as: "T1S 2" or "T1S 3" 
-###   As long as underscores are NOT used within the Photo Type naming convention i.e: "T1S_4"
-#Codes to modify based on the naming convention
+###   As long as underscores are NOT used within the Photo Type naming convention i.e: "T1S_4" would not work
+#Variables to modify based on the naming convention utilized
 folder_path = "//Blm/dfs/ca/el/pub/public/Monitoring/AIM/Terrestrial/Final Data/CAAIM NCDO 2018/Base AIM Final Data/Base AIM Data/Plot Photos"
     #Folder path must use forward slashes - "/" and go to the folder containing the data
     #This is not currently recursive
