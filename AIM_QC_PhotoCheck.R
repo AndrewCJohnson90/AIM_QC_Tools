@@ -3,10 +3,10 @@
 ### Assumptions:
 ##  Example naming convention: "CAAIM NCDO_Twin Peaks 111_Soil1_20180612.jpg"
 ##  - Naming convention is parsed with underscores: "_"
-##  - Naming convention starts with Project Name: "CAAIM NCDO"
-##  - Project [designation] is followed by PlotID: "Twin Peaks 111"
-##  - PlotID is followed by Photo Type [description]: "Soil1"
-##  - Photo_type is followed by Date [and file_format]: "20180612.jpg"  
+##  - Naming convention starts with Project Name, i.e: "CAAIM NCDO"
+##  - Project [designation] is followed by PlotID, i.e: "Twin Peaks 111"
+##  - PlotID is followed by Photo Type [description], i.e: "Soil1"
+##  - Photo_type is followed by Date [and file_format], i.e: "20180612.jpg"  
 ##       *currently, file format is not split from date
 ##       *Date format is YYYYMMDD
 ###
