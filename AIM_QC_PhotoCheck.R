@@ -1,6 +1,8 @@
 ####
 ##This tool is developed to help analyze the photos within a folder directory
 ### Assumptions:
+##  It is assumed that the photos follow the AIM Data Management Protocol for 
+##  photo naming (v 4.0  2019)
 ##  Example naming convention: "CAAIM NCDO_Twin Peaks 111_Soil1_20180612.jpg"
 ##  - Naming convention is parsed with underscores: "_"
 ##  - Naming convention starts with Project Name, i.e: "CAAIM NCDO"
@@ -36,9 +38,9 @@ folder_path = "//Blm/dfs/ca/el/pub/public/Monitoring/AIM/Terrestrial/Final Data/
     #This is not currently recursive
 file_format = ".jpg" ## ".png"
 SoilCode = "Soil1"
-Transect1_Start = "T1S" ##Standard is "T1"
-Transect2_Start = "T2S" ##Standard is "T2"
-Transect3_Start = "T3S" ##Standard is "T3"
+Transect1_Start = "T1" ##NorCal Standard is "T1S"
+Transect2_Start = "T2" ##NorCal Standard is "T2"
+Transect3_Start = "T3" ##NorCal Standard is "T3"
 
 
 #Import Directory to inventory
@@ -109,7 +111,7 @@ if (nrow(PlotIDs_Missing_Transect1) > 0 ){
   print(paste(count(PlotIDs_Missing_Transect1), "unique Plot IDs are missing transect 1 photos in this folder:"))
   PlotIDs_Missing_Transect1[,"PlotID", drop=FALSE]   
 } else {
-  print("It would appear that all Transect 1 photos have been accounted for")
+  print("It would appear that all transect 1 photos have been accounted for")
 }
 
 #If any plots missing transect 2 start photos, print number of missing transect 2 start photos and list them.
@@ -118,7 +120,7 @@ if (nrow(PlotIDs_Missing_Transect2) > 0 ){
   print(paste(count(PlotIDs_Missing_Transect2), "unique Plot IDs are missing transect 2 photos in this folder:"))
   PlotIDs_Missing_Transect2[,"PlotID", drop=FALSE]   
 } else {
-  print("It would appear that all Transect 2 photos have been accounted for")
+  print("It would appear that all transect 2 photos have been accounted for")
 }
 
 #If any plots missing transect 3 start photos, print number of missing transect 3 start photos and list them.
@@ -127,7 +129,7 @@ if (nrow(PlotIDs_Missing_Transect3) > 0 ){
   print(paste(count(PlotIDs_Missing_Transect3), "unique Plot IDs are missing transect 3 photos in this folder:"))
   PlotIDs_Missing_Transect3[,"PlotID", drop=FALSE]   
 } else {
-  print("It would appear that all Transect 3 photos have been accounted for")
+  print("It would appear that all transect 3 photos have been accounted for")
 }
 
 print("analysis complete")
