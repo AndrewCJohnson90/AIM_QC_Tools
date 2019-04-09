@@ -32,7 +32,7 @@ library(tidyverse)
 ### Wildcards are programmed around each code
 ### Thus, "T1S" will also pick up additional photos such as: "T1S 2" or "T1S 3" 
 ###   As long as underscores are NOT used within the Photo Type naming convention i.e: "T1S_4" would not work
-#Variables to modify based on the naming convention utilized
+#### *** Modify variables below based on the naming convention utilized ****
 folder_path = "//Blm/dfs/ca/el/pub/public/Monitoring/AIM/Terrestrial/Final Data/CAAIM NCDO 2018/Base AIM Final Data/Base AIM Data/Plot Photos"
     #Folder path must use forward slashes - "/" and go to the folder containing the data
     #This is not currently recursive
